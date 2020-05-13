@@ -1,0 +1,35 @@
+{
+	"name": "zombi-infra",
+	"version": "2.0.0",
+	"description": "This is the Zombi Server infrastructure",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/jmlxxvi/zombi-infra.git"
+	},
+	"scripts": {
+		"deploy": "npm run test && npm run lint && node infra/aws/deploy.js",
+		"audit": "npm audit --registry=https://registry.npmjs.org"
+	},
+	"keywords": [
+		"backend",
+		"RPC",
+		"JSON",
+		"JSON-RPC",
+		"REST"
+	],
+	"contributors": [
+		{
+			"name": "Juan Martín Guillén",
+			"email": "juanmartinguillen@gmail.com"
+		}
+	],
+	"license": "MIT",
+	"dependencies": {},
+	"devDependencies": {
+		"aws-sdk": "^2.602.0",
+		"node-ssh": "^7.0.1",
+		"nodemon": "^2.0.2",
+		"shelljs": "^0.8.3",
+		"zip-a-folder": "0.0.10"
+	}
+}

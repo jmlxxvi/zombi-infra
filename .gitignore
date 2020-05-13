@@ -1,2 +1,5 @@
 node_modules
 zombi_env
+.env
+*.pem
+server.name
